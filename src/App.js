@@ -5,6 +5,7 @@ import {
 
 import Header from './components/Header';
 import NotesPage from './pages/NotesPage';
+import NotePage from './pages/NotePage';
 
 
 
@@ -13,7 +14,8 @@ function App() {
     <Router>
     <div className="App">
       <Header/>  
-      <Route component={NotesPage}/>
+      <Route component={NotesPage} path="/" exact />
+      <Route component={NotePage} path="/note/:id" />
     </div>
     </Router>
   );

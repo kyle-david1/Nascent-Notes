@@ -1,10 +1,9 @@
 import React from 'react'
 
-const ListItem = (props) => {
-  console.log('NOTE:', props.note)
+const ListItem = ({note}) => {
   return (
     <div className='notes-list-item'>
-        <h3>{props.note.body}</h3>
+        <h3>{note.body}</h3>
     </div>
   )
 }
