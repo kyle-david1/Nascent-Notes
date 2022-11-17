@@ -1,4 +1,5 @@
 import React from 'react';
+
 import notes from '../assets/data';
 
 const NotePage = ({match}) => {
